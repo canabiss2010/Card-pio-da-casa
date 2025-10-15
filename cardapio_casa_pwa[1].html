@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio da Casa</title>
+  <link rel="manifest" href="cardapio_manifest.json">
+  <meta name="theme-color" content="#008000">
+</head>
+<body>
+  <h1>Cardápio da Casa</h1>
+  <p>App PWA do seu cardápio está pronto!</p>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('cardapio_sw.js');
+    }
+  </script>
+</body>
+</html>
